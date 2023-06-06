@@ -26,21 +26,26 @@
                 <div class="row m-auto">
 
                     <div class="col-auto">
-                        <img src="img/logo.svg" alt="boolean logo">
+                        <div class="logo-container-1 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                        <div class="logo-container-2 d-xl-none d-lg-none d-md-inline-block d-sm-inline-block">
+                            <img src="img/mobile-logo.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col pt-xl-0 pt-lg-0 pt-md-2 pt-sm-2 pt-2">
                         <input type="text" class="form-control bg-secondary-subtle" placeholder="Prova a cercare: Lezioni di Laravel">
                     </div>
 
-                    <div class="col-auto">
-                        <a class="text-decoration-none text-secondary px-1" href="#">
+                    <div class="col-auto pt-xl-0 pt-lg-0 pt-md-2 pt-sm-2 pt-2">
+                        <a class="text-decoration-none text-secondary px-1 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none" href="#">
                             <i class="bi bi-border-width"></i>
                         </a>
-                        <a class="text-decoration-none text-secondary px-1" href="#">
+                        <a class="text-decoration-none text-secondary px-1 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none" href="#">
                             <i class="bi bi-question-circle-fill"></i>
                         </a>
-                        <a class="text-decoration-none text-secondary px-1" href="#">
+                        <a class="text-decoration-none text-secondary px-1 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none" href="#">
                             <i class="bi bi-three-dots-vertical"></i>
                         </a>
                         <a class="dropdown text-decoration-none text-warning" href="#"role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,26 +74,32 @@
         <div class="main-content d-flex">
 
             <!-- aside-->
-            <aside class="d-flex flex-column justify-content-between bg-dark p-4">
+            <aside style="background-image: url(img/sidebar-bg.png);" class="d-flex flex-column justify-content-between bg-dark ps-3 py-3">
                 
                 <div>
                     <ul class="list-unstyled">
-                        <li>
+                        <li class="text-light">
                             <a class="text-decoration-none text-light" href="#">
                                 <i class="bi bi-house-door-fill"></i> 
-                                <span class="align-middle ms-1">Home</span>
-                            </a>  
+                                <span class="px-2 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
+                                    Home
+                                </span>
+                            </a> 
                         </li>
                         <li>
                             <a class="text-decoration-none text-light" href="#">
                                 <i class="bi bi-reception-3"></i>
-                                <span class="align-middle ms-1">Stats</span>
+                                <span class="px-2 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
+                                    Stats
+                                </span>
                             </a>
                         </li>
                         <li>
                            <a class="text-decoration-none text-light" href="#">
                                 <i class="bi bi-reception-4"></i>
-                                <span class="align-middle ms-1">Signal</span>
+                                <span class="px-2 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
+                                    Signals
+                                </span>
                            </a>
                         </li>
                     </ul>
@@ -97,7 +108,9 @@
                 <div>
                    <a class="text-decoration-none text-light" href="#">
                         <i class="bi bi-gear-fill"></i>
-                        <span class="ps-2">Admin</span>
+                        <span class="px-2 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
+                            Admin
+                        </span>
                    </a>
                 </div>
 
@@ -113,56 +126,72 @@
 
                         <div class="row">
     
-                            <div class="col-6">
+                            <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 mb-sm-4">
                                <div>
                                     <h4 class="d-inline-block">
                                         Boolean
                                     </h4>
-                                    <span class="badge text-bg-dark">
+                                    <span class="badge rounded-5 bg-dark bg-opacity-50">
                                         Piano Blaze
                                     </span>
                                </div>
                                <div>
-                                    <span class="badge text-bg-dark">
+                                    <span class="badge rounded-5 bg-dark bg-opacity-50">
                                         3 app
                                     </span>
                                     <i class="bi bi-chevron-double-right"></i>
-                                    <span class="badge text-bg-dark">
+                                    <span class="badge rounded-circle bg-dark bg-opacity-50 d-xl-none d-lg-none d-md-inline-block d-sm-inline-block d-inline-block">
+                                        +
+                                    </span>
+                                    <span class="badge rounded-5 bg-dark bg-opacity-50 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
                                         Boolean mobile app
                                     </span>
-                                    <span class="badge text-bg-dark">
+                                    <span class="badge rounded-5 bg-dark bg-opacity-50 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
                                         Boolean web app
                                     </span>
-                                    <span class="badge text-bg-dark">
+                                    <span class="badge rounded-5 bg-dark bg-opacity-50 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
                                         Boolean blog app
                                     </span>
                                </div>
                             </div>
     
-                            <div class="col-4">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mb-sm-4">
                                 Studenti online negli ultimi 30 minuti
                                 <h4 class="pt-2">
                                     125
                                 </h4>
                             </div>
 
-                            <div class="col-2">
+                            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 order-lg-1 order-md-1 order-sm-first mb-sm-4">
                                <span class="pe-2">
-                                    Nuovo Studente
+                                    Nuovo studente
                                </span>
                                <button class="btn btn-primary border py-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                                     <h5>
                                         +
                                     </h5>
-                               </button>
+                                </button>
                                 <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                                     <div class="offcanvas-header">
-                                        form
+                                        Inserisci un nuovo studente
                                     </div>
                                     <div class="offcanvas-body">
-                                        form
+                                        <form action="">
+                                            <div>
+                                                <label for="">
+                                                    Nome
+                                                    <br>
+                                                    <input type="text">
+                                                </label>
+                                                <label for="">
+                                                    Cognome
+                                                    <br>
+                                                    <input type="text">
+                                                </label>
+                                            </div>
+                                        </form>
                                     </div>
-                               </div>
+                                </div>
                             </div>
     
                         </div>
@@ -179,8 +208,9 @@
                         <div class="row py-4 px-2">
 
                             <!-- left side -->
-                            <div class="col-8">
+                            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
 
+                                <!-- prossime classi section -->
                                 <div class="border border-bottom-0 rounded">
                                     <table class="table table-hover">
                                         <thead>
@@ -197,10 +227,10 @@
                                                 <th class="fw-normal">
                                                     Nome
                                                 </th>
-                                                <th class="fw-normal">
+                                                <th class="fw-normal ">
                                                     Data Inizio
                                                 </th>
-                                                <th class="fw-normal">
+                                                <th class="fw-normal ">
                                                     ROI
                                                 </th>
                                                 <th class="fw-normal">
@@ -219,10 +249,10 @@
                                                     </div>
                                                     Classe 75
                                                 </td>
-                                                <td>
+                                                <td >
                                                     15 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -246,10 +276,10 @@
                                                     </div>
                                                     Classe 76
                                                 </td>
-                                                <td>
+                                                <td >
                                                     16 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -273,10 +303,10 @@
                                                     </div>
                                                     Classe 77
                                                 </td>
-                                                <td>
+                                                <td >
                                                     17 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -300,10 +330,10 @@
                                                     </div>
                                                     Classe 78
                                                 </td>
-                                                <td>
+                                                <td >
                                                     18 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -327,10 +357,10 @@
                                                     </div>
                                                     Classe 79
                                                 </td>
-                                                <td>
+                                                <td >
                                                     19 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -354,10 +384,10 @@
                                                     </div>
                                                     Classe 80
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -381,10 +411,10 @@
                                                     </div>
                                                     Classe 81
                                                 </td>
-                                                <td>
+                                                <td >
                                                     21 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -408,10 +438,10 @@
                                                     </div>
                                                     Classe 82
                                                 </td>
-                                                <td>
+                                                <td >
                                                     22 Feb 2021
                                                 </td>
-                                                <td>
+                                                <td >
                                                     20%
                                                 </td>
                                                 <td>
@@ -432,6 +462,7 @@
                                     </table>
                                 </div>
 
+                                <!-- faq section -->
                                 <div class="accordion pt-2">
                                     <div class="accordion-item">
                                         <h4 class="accordion-header bg-secondary-subtle p-2">
@@ -479,8 +510,9 @@
                             </div>
 
                             <!-- right side-->
-                            <div class="col-4">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-xl-0 mt-lg-0 mt-md-3 mt-sm-3">
 
+                                <!-- todo section -->
                                 <div class="border rounded">
                                     <h4 class="bg-secondary-subtle p-2">
                                         Todo
@@ -504,6 +536,7 @@
                                     </ul>
                                 </div>
 
+                                <!-- graphic section -->
                                 <div class="rounded border p-3 mt-3">
                                     <div class="border rounded">
                                         <div class="image-container-2">

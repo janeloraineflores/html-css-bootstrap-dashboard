@@ -5,10 +5,16 @@
 */
 
 header{
-    height: 50px;
+    height: 60px;
 }
 
+.logo-container-2{
+    width: 60px;
+}
 
+.logo-container-2 img{
+    width: 100%;
+}
 
 
 
@@ -18,8 +24,13 @@ header{
 -------------------
 */
 
+aside{
+    width: 200px;
+}
+
+
 .main-content{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 60px);
 }
 
 .image-container{
@@ -30,15 +41,8 @@ header{
     width: 100%;
 }
 
-.image-container-2{
-    width: 400px;
-    
-}
 
 .image-container-2 img{
     width: 100%;
 }
-
-
-
 
