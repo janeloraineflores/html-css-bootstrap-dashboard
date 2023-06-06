@@ -12,10 +12,6 @@ header{
     width: 60px;
 }
 
-.logo-container-2 img{
-    width: 100%;
-}
-
 
 
 /* 
@@ -37,12 +33,7 @@ aside{
     width: 30px;
 }
 
-.image-container img{
-    width: 100%;
-}
-
-
-.image-container-2 img{
-    width: 100%;
+.hover:hover{
+    background-color:rgba(145, 144, 144, 0.321);
 }
 

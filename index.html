@@ -30,7 +30,7 @@
                             <img src="img/logo.svg" alt="">
                         </div>
                         <div class="logo-container-2 d-xl-none d-lg-none d-md-inline-block d-sm-inline-block">
-                            <img src="img/mobile-logo.png" alt="">
+                            <img src="img/mobile-logo.png" alt="" class="w-100">
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@
                 <div>
                     <ul class="list-unstyled">
                         <li class="text-light">
-                            <a class="text-decoration-none text-light" href="#">
+                            <a class="text-decoration-none text-light hover" href="#">
                                 <i class="bi bi-house-door-fill"></i> 
                                 <span class="px-2 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
                                     Home
@@ -87,7 +87,7 @@
                             </a> 
                         </li>
                         <li>
-                            <a class="text-decoration-none text-light" href="#">
+                            <a class="text-decoration-none text-light hover" href="#">
                                 <i class="bi bi-reception-3"></i>
                                 <span class="px-2 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
                                     Stats
@@ -95,7 +95,7 @@
                             </a>
                         </li>
                         <li>
-                           <a class="text-decoration-none text-light" href="#">
+                           <a class="text-decoration-none text-light hover" href="#">
                                 <i class="bi bi-reception-4"></i>
                                 <span class="px-2 d-xl-inline-block d-lg-inline-block d-md-none d-sm-none d-none">
                                     Signals
@@ -177,17 +177,111 @@
                                     </div>
                                     <div class="offcanvas-body">
                                         <form action="">
-                                            <div>
-                                                <label for="">
-                                                    Nome
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="name" class="pb-2">
+                                                        Name
+                                                    </label>
+                                                    <input type="text" class="w-100 border">
+                                                </div>
+                                                <div class=" col-md-6 ml-5">
+                                                    <label for="surname" class="pb-2">
+                                                        Cognome
+                                                    </label>
+                                                    <input type="text" class="w-100 border">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-3">
+                                                <div class="col-md-6">
+                                                    <label for="email"class="pb-2">
+                                                        Email
+                                                    </label>
+                                                    <div class="input-group input-group-sm ">
+                                                        <span class="input-group-text" id="inputGroup-sizing-sm">
+                                                            @
+                                                        </span>
+                                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="password" class="pb-2">
+                                                        Password
+                                                    </label>
+                                                    <input type="password" class="w-100 border">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-3">
+                                                <div class="col-md-6">
+                                                    <label for="indirizzo-email"class="pb-2">
+                                                        Indirizzo email
+                                                    </label>
+                                                    <div class="input-group input-group-sm ">
+                                                        <span class="input-group-text" id="inputGroup-sizing-sm">
+                                                            @
+                                                        </span>
+                                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="password" class="pb-2">
+                                                        Password
+                                                    </label>
+                                                    <input type="password" class="w-100 border">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-3">
+                                                <div class="col-12">
+                                                    <label for="indirizzo" class="pb-2">
+                                                        Indirizzo
+                                                    </label>
+                                                    <input type="text" class="w-100 border">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-3">
+                                                <div class="col-md-6">
+                                                    <label for="city">
+                                                        Città
+                                                    </label>
+                                                    <input type="text" class="w-100 border">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="stato">
+                                                        Stato
+                                                    </label>
                                                     <br>
-                                                    <input type="text">
-                                                </label>
+                                                    <select name="stato" id="stato" class="border">
+                                                        <option value="volvo">Italia</option>
+                                                        <option value="saab">Francia</option>
+                                                        <option value="opel">Germania</option>
+                                                        <option value="audi">Spagna</option>
+                                                      </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="cap">
+                                                        CAP
+                                                    </label>
+                                                    <input type="text" class="w-100 border">
+                                                </div>
+                                            </div>
+                                            <div class="row pt-3">
+                                                <div class="col-md-12">
+                                                    <label for="foto">
+                                                        Foto
+                                                    </label>
+                                                    <div class="input-group">
+                                                        <input type="file" class="form-control" id="inputGroupFile02">
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="pt-3">
+                                                <input type="checkbox">
                                                 <label for="">
-                                                    Cognome
-                                                    <br>
-                                                    <input type="text">
+                                                    Seleziona per proseguire
                                                 </label>
+                                            </div>
+                                            <div class="pt-3">
+                                                <input type="submit" value="Salva" class="bg-primary text-light rounded border-0">
+                                                <input type="reset" value="Svuota" class="bg-warning rounded border-0">
                                             </div>
                                         </form>
                                     </div>
@@ -211,7 +305,7 @@
                             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
 
                                 <!-- prossime classi section -->
-                                <div class="border border-bottom-0 rounded">
+                                <div class="border border-bottom-0 rounded d-xl-block d-lg-block d-md-none d-sm-none d-none">
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
@@ -227,7 +321,7 @@
                                                 <th class="fw-normal">
                                                     Nome
                                                 </th>
-                                                <th class="fw-normal ">
+                                                <th class="fw-normal">
                                                     Data Inizio
                                                 </th>
                                                 <th class="fw-normal ">
@@ -245,7 +339,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
                                                     </div>
                                                     Classe 75
                                                 </td>
@@ -272,7 +366,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
                                                     </div>
                                                     Classe 76
                                                 </td>
@@ -299,7 +393,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
                                                     </div>
                                                     Classe 77
                                                 </td>
@@ -326,7 +420,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt=""class="w-100">
                                                     </div>
                                                     Classe 78
                                                 </td>
@@ -353,7 +447,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
                                                     </div>
                                                     Classe 79
                                                 </td>
@@ -380,7 +474,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
                                                     </div>
                                                     Classe 80
                                                 </td>
@@ -407,7 +501,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
                                                     </div>
                                                     Classe 81
                                                 </td>
@@ -434,7 +528,7 @@
                                             <tr>
                                                 <td>
                                                     <div class="image-container d-inline-block pe-2">
-                                                        <img src="img/class-avatar.jpg" alt="">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
                                                     </div>
                                                     Classe 82
                                                 </td>
@@ -462,11 +556,208 @@
                                     </table>
                                 </div>
 
+                                <div class="border border-bottom-0 rounded d-xl-none d-lg-none d-md-block d-sm-block">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="5" class="bg-secondary-subtle">
+                                                    <h4>
+                                                        Prossime Classi
+                                                    </h4>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <thead>
+                                            <tr>
+                                                <th class="fw-normal">
+                                                    Nome
+                                                </th>
+                                                <th class="fw-normal">
+                                                    Stato
+                                                </th>
+                                                <th class="fw-normal">
+                                                    Azioni
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    Classe 75
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    Classe 76
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    Classe 77
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-warning text-light">
+                                                        process
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt=""class="w-100">
+                                                    </div>
+                                                    Classe 78
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    Classe 79
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-danger">
+                                                        failed
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    Classe 80
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    Classe 81
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-danger">
+                                                        failed
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="image-container d-inline-block pe-2">
+                                                        <img src="img/class-avatar.jpg" alt="" class="w-100">
+                                                    </div>
+                                                    Classe 82
+                                                </td>
+                                                <td>
+                                                    <span class="badge text-bg-success">
+                                                        Done
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-pencil-fill"></i>
+                                                    </button>
+                                                    <button class="text-secondary bg-light border-secondary px-2 pb-1 rounded">
+                                                        <i class="bi bi-trash-fill"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
                                 <!-- faq section -->
                                 <div class="accordion pt-2">
                                     <div class="accordion-item">
                                         <h4 class="accordion-header bg-secondary-subtle p-2">
-                                            FAQ
+                                            F.A.Q
                                         </h4>
                                     </div>
                                     <div class="accordion-item">
@@ -520,17 +811,20 @@
                                     <ul class="list-unstyled list-group pb-2 px-3">
                                         <li class="list-group-item">
                                             <label for="">
-                                                <input type="checkbox" class="align-middle"> Kickoff nuove classi
+                                                <input type="checkbox" class="align-middle">
+                                                Kickoff nuove classi
                                             </label>
                                         </li>
                                         <li class="list-group-item">
                                             <label for="">
-                                                <input type="checkbox" class="align-middle"> Lezioni su Bootstrap 5 in classe #101
+                                                <input type="checkbox" class="align-middle">
+                                                Lezioni su Bootstrap 5 in classe #101
                                             </label>
                                         </li>
                                         <li class="list-group-item">
                                             <label for="">
-                                                <input type="checkbox" class="align-middle"> Controllare username su github studenti
+                                                <input type="checkbox" class="align-middle"> 
+                                                Controllare username su github studenti
                                             </label>
                                         </li>
                                     </ul>
@@ -540,7 +834,7 @@
                                 <div class="rounded border p-3 mt-3">
                                     <div class="border rounded">
                                         <div class="image-container-2">
-                                            <img src="img/stats.jpeg" alt="">
+                                            <img src="img/stats.jpeg" alt="" class="w-100">
                                             <h6 class="ps-3">
                                                 Utenti attivi
                                             </h6>
